@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .Lato-font {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="Lato-font">
+    <header>
+        <!-- small device navbar -->
+        <nav class="sm:hidden lg:hidden md:hidden xl:hidden 2xl:hidden">
+            <div class="flex justify-between m-2">
+                <div>
+                    <a href="indext.html">
+                        <img class="pr-8" src="images/new-redx-logo.svg">
+                    </a>
+                </div>
+                <div>
+                    <button class="btn" onclick="my_modal_3.showModal()"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <dialog id="my_modal_3" class="modal">
+                <div class="modal-box">
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <div class=" py-2 ">
+                        <img class="w-20" src="images/new-redx-logo.svg" alt="">
+                        <div class="flex items-center gap-1 mt-10">
+                            <img src="images/phone-call-outlined.svg" class="h-4">
+                            <h3 class="text-[#EB2127]  ">09610007339</h3>
+                        </div>
+                        <div>
+                            <p class="mb-2 mt-2"><a href="">Pricing plan</a></p>
+                            <p><a href="login.html">Log in</a></p>
+                            <p class="mt-2"><a href="sign up.html">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </nav>
+
+        <!-- larg device navbar -->
+        <nav class="flex justify-between py-5 px-14 max-sm:hidden">
+            <div class="flex items-center">
+                <div>
+                    <a href="indext.html">
+                        <img class="pr-8" src="images/new-redx-logo.svg">
+                    </a>
+                </div>
+                <img src="images/phone-call-outlined.svg" alt="">
+                <h3 class="text-[#EB2127] font-normal text-xl pl-2">09610007339</h3>
+            </div>
+            <div>
+                <button class="ml-3">Pricing plan</button>
+
+                <a href="http://127.0.0.1:5500/login.html"
+                    class="text-base bg-white text-red-500 font-semibold py-3 px-5 rounded-lg border-2 border-red-300 hover:bg-red-100 ml-3">Log
+                    in</a>
+
+                <a href="http://127.0.0.1:5500/sign%20up.html"
+                    class="text-base bg-red-600 text-white font-semibold py-3 px-4 rounded-xl border-2 border-red-300 hover:bg-red-500 ml-2">Sign
+                    up</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Log in Section -->
+        <hr class="h-0.5 bg-gray-300 ">
+
+        <div class="xl:flex lg:flex md:flex sm:flex ">
+            <div class="xl:w-1/2 xl:bg-slate-100 lg:bg-slate-100 md:bg-slate-100 sm:bg-slate-100">
+                <div class=" xl:w-1/2 xl:mx-[25%] xl:my-[28%] max-sm:mx-4">
+                    <h3 class="text-[#1A1A1A] text-3xl font-bold mb-5 max-sm:mt-10">Log In</h3>
+                    <h5 class="text-[#424242] text-base font-normal mb-3 ">Entery your phone number to log in</h5>
+                    <input type="text" placeholder="Enter phone number"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm mb-5">
+
+                    <button type="submit"
+                        class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mb-6 ">
+                        Log in
+                    </button>
+                    <a href="http://127.0.0.1:5500/sign%20up.html" class="text-[#424242] text-base font-normal">Don't
+                        have an account? <span class="text-red-600 font-bold"> Sign
+                            up </span></a>
+
+                    <hr class="my-5 h-0.5 bg-gray-500">
+                    <h5 class="text-[#424242] text-base font-normal">For partner account? <span
+                            class="text-red-600 font-bold">Login
+                            with password</span></h5>
+                </div>
+            </div>
+            <!-- 2nd part -->
+            <div>
+                <div class="w-1/2 mx-[25%] my-[20%] max-sm:hidden ">
+                    <img src="images/parcel-tracking.png">
+
+                    <div class="text-center mt-5">
+                        <h3 class="text-[#1A1A1A] text-2xl font-bold mb-3">Track your parcels</h3>
+                        <p>Get your live parcel update in every step of the way till it gets delivered</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

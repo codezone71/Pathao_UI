@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .Lato-font {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="Lato-font">
+    <header>
+        <!-- small device navbar -->
+        <nav class="sm:hidden lg:hidden md:hidden xl:hidden 2xl:hidden">
+            <div class="flex justify-between">
+                <div>
+                    <a href="indext.html">
+                        <img class="pr-8" src="images/new-redx-logo.svg">
+                    </a>
+                </div>
+                <div>
+                    <button class="btn" onclick="my_modal_3.showModal()"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <dialog id="my_modal_3" class="modal">
+                <div class="modal-box">
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <div class=" py-2 ">
+                        <img class="w-20" src="images/new-redx-logo.svg" alt="">
+                        <div class="flex items-center gap-1 mt-10">
+                            <img src="images/phone-call-outlined.svg" class="h-4">
+                            <h3 class="text-[#EB2127]  ">09610007339</h3>
+                        </div>
+                        <div>
+                            <p class="mb-2 mt-2"><a href="plan.html">Pricing plan</a></p>
+
+                            <p><a href="login.html">Log in</a></p>
+                            <p class="mt-2"><a href="sign up.html">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </nav>
+
+        <!-- larg device navbar -->
+        <nav class="flex justify-between py-5 px-14 max-sm:hidden">
+            <div class="flex items-center">
+                <div>
+                    <a href="indext.html">
+                        <img class="pr-8" src="images/new-redx-logo.svg">
+                    </a>
+                </div>
+                <img src="images/phone-call-outlined.svg" alt="">
+                <h3 class="text-[#EB2127] font-normal text-xl pl-2">09610007339</h3>
+            </div>
+            <div>
+                <a href="plan.html">Pricing plan</a>
+                <a href="http://127.0.0.1:5500/login.html"
+                    class="text-base bg-white text-red-500 font-semibold py-3 px-5 rounded-lg border-2 border-red-300 hover:bg-red-100 ml-3">Log
+                    in</a>
+                <a href="http://127.0.0.1:5500/sign%20up.html"
+                    class="text-base bg-red-600 text-white font-semibold py-3 px-4 rounded-xl border-2 border-red-300 hover:bg-red-500 ml-2">Sign
+                    up</a>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <div class="hero  min-h-screen  bg-[url(images/banner-bg.webp)]">
+            <div class="text-left xl:-translate-x-40 max-sm:mx-3">
+                <h1 class="text-white text-5xl max-sm:text-4xl font-bold leading-normal mb-5">Bangladesh's <span
+                        class="text-red-600 text-5xl max-sm:text-4xl font-bold ">Largest</span> <br> <span
+                        class="text-white text-5xl max-sm:text-4xl font-bold ">Logistics Network</span></h1>
+                <p class="text-white text-lg font-normal mb-10">Delivering Parcels Across 64 Districts in Just 3 Days
+                    with 24/7 Support and Next-Day Payment, All at the Lowest Rates</p>
+                <!-- <button  class="text-base font-normal bg-red-600 hover:bg-red-500 text-white px-5 py-3 rounded-md max-sm:w-full">Become
+                    a merchant</button> -->
+
+                <a href="http://127.0.0.1:5500/sign%20up.html"
+                    class="text-base font-normal bg-red-600 hover:bg-red-500 text-white px-6 py-4 rounded-md max-sm:w-full">Become
+                    a merchant</a>
+            </div>
+        </div>
+        <!-- Tracking Section -->
+        <div
+            class="items-center text-center bg-gray-100 sm:flex md:flex lg:flex xl:flex justify-center p-5  h-28 w-1/2  max-sm:h-full border-2 rounded-2xl xl:translate-x-1/2 -translate-y-1/2 max-sm:w-full ">
+
+            <h3 class="text-[#4D4D4D] text-base font-normal max-sm:mb-5">Track your parcel to get detailed update</h3>
+            <div class="flex ">
+                <img src="images/tracker.png" alt="" class="translate-x-12 p-3 max-sm:hidden">
+                <input type="search" placeholder="Enter Tracking ID"
+                    class="focus:outline-none placeholder-gray-500 dark:placeholder-gray-100 h-14  w-96 p-4 xl:pl-16 rounded-md xl:rounded-r-none border-2 max-sm:w-full">
+            </div>
+
+            <button
+                class="text-[#EB2127] text-sm font-bold border-2 border-red-400 rounded-md xl:rounded-l-none w-32 h-14 px-3 py-4 max-sm:w-full max-sm:mt-4">Rrack
+                parcel</button>
+        </div>
+
+        <!-- logo secton -->
+        <div class="sm:flex md:flex lg:flex xl:flex max-sm:mx-24 items-center justify-center gap-5 ">
+            <h3 class="text-base font-medium max-sm:text-center">TOP ENTERPRISES</h3>
+            <img class="max-sm:mt-5 max-sm:mb-4 xl:h-14 " src="images/1.png">
+            <img class=" xl:h-14" src="images/2.png ">
+            <img class="max-sm:mt-5 max-sm:mb-5 xl:h-14 " src="images/3.png">
+            <h3 class=" text-base font-medium mr-10 max-sm:text-center">TOP SMES</h3>
+            <img class="max-sm:mt-5 max-sm:mb-5 xl:h-10  mr-10 " src="images/4.png">
+            <img class=" xl:h-10  mr-10 " src="images/5.png">
+            <img class="max-sm:mt-5  xl:h-10 " src="images/6.png">
+        </div>
+    </header>
+    <main>
+        <!-- Services section -->
+        <div>
+            <h1 class="text-[#1A1A1A] font-bold text-5xl text-center mt-28 mb-16">We provide services that you can rely
+                on</h1>
+
+            <div
+                class=" lg:grid md:grid xl:grid sm:grid grid-cols-12 gap-x-5 gap-y-10 drop-shadow-xl  mb-20 mx-6 max-sm:mx-4">
+
+                <div class="col-span-3 ">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-1.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Parcel Delivery</h3>
+                    <p class="text-base font-normal ">First-mile pickup, last-mile delivery services for individuals
+                        (C2C), small businesses (B2C) and corporates (B2B)</p>
+                </div>
+
+                <div class="col-span-3 max-sm:mt-4 max-sm:mb-4">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-2.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Bulk Shipment</h3>
+                    <p class="text-base font-normal">Specialized solutions for large items and large numbers</p>
+                </div>
+
+                <div class="col-span-3">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-3.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Line Haul</h3>
+                    <p class="text-base font-normal">Freight movement solutions including FTL (full truckload), LTL
+                        (less than truckload)</p>
+                </div>
+
+                <div class="col-span-3 max-sm:mt-4 max-sm:mb-4">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-4.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Warehouse</h3>
+                    <p class="text-base font-normal">Complete fulfillment solutions including storing, sorting,
+                        processing</p>
+                </div>
+
+                <div class="col-span-3">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-5.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Truck Rent</h3>
+                    <p class="text-base font-normal">Open trucks and covered vans for rent any size, anywhere in BD</p>
+                </div>
+
+                <div class="col-span-3 max-sm:mt-4 max-sm:mb-4">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-6.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Load/Unload</h3>
+                    <p class="text-base font-normal">Industry-specific loading/unloading services in factories, project
+                        sites, and ports</p>
+                </div>
+
+                <div class="col-span-3">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-7.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Load/Unload</h3>
+                    <p class="text-base font-normal">Industry-specific loading/unloading services in factories, project
+                        sites, and ports</p>
+                </div>
+
+                <div class="col-span-3 max-sm:mt-4 ">
+                    <div class=" overflow-hidden rounded-xl">
+                        <img class="rounded-xl object-cover transition duration-500 hover:scale-110 mb-4"
+                            src="images/services-8.webp" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Load/Unload</h3>
+                    <p class="text-base font-normal">Industry-specific loading/unloading services in factories, project
+                        sites, and ports</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logistics partner section -->
+        <div>
+            <h1 class="text-[#1A1A1A] font-bold text-5xl text-center mb-20 mt-32">Choose REDX as your logistics partner
+            </h1>
+
+            <div class="lg:grid xl:grid md:grid sm:grid grid-cols-12 gap-6 xl:mx-16 max-sm:mx-5 mb-36 ">
+
+                <div class="col-span-4 text-center max-sm:mb-20">
+                    <img class="w-28 mb-8 translate-x-56 max-sm:translate-x-32" src="images/partner-icon-1.png" alt="">
+                    <h3 class="text-black font-bold text-2xl mb-2">Industry-leading tech</h3>
+                    <p class="text-[#424242] text-base font-normal">With a brilliant team of engineers driving
+                        everything we do, REDX offers the best possible service experience powered by superior
+                        technology</p>
+                </div>
+
+                <div class="col-span-4 text-center">
+                    <img class="w-28 mb-8 translate-x-56 max-sm:translate-x-32" src="images/partner-icon-2.png" alt="">
+                    <h3 class="text-black font-bold text-2xl mb-2">Nationwide coverage</h3>
+                    <p class="text-[#424242] text-base font-normal">REDX offers the widest logistics network, covering
+                        64 districts and 490+ sub districts across Bangladesh</p>
+                </div>
+
+                <div class="col-span-4 text-center max-sm:mt-20 max-sm:mb-20">
+                    <img class="w-28 mb-8 translate-x-56 max-sm:translate-x-32" src="images/partner-icon-3.png" alt="">
+                    <h3 class="text-black font-bold text-2xl mb-2">Fastest solutions</h3>
+                    <p class="text-[#424242] text-base font-normal">Backed by an agile team and dynamic operations, we
+                        promise to find the fastest solutions for your needs</p>
+                </div>
+
+                <div class="col-span-4 text-center">
+                    <img class="w-28 mb-8 translate-x-56 max-sm:translate-x-32" src="images/partner-icon-4.svg" alt="">
+                    <h3 class="text-black font-bold text-2xl mb-2">Next day payment</h3>
+                    <p class="text-[#424242] text-base font-normal">Once the delivery is complete you will receive
+                        payment the very next day.</p>
+                </div>
+
+                <div class="col-span-4 text-center max-sm:mt-20 max-sm:mb-20">
+                    <img class="w-28 mb-8 translate-x-56 max-sm:translate-x-32" src="images/partner-icon-5.svg" alt="">
+                    <h3 class="text-black font-bold text-2xl mb-2">Best COD rates</h3>
+                    <p class="text-[#424242] text-base font-normal">COD charge inside Dhaka 0%, outside Dhaka 1%.</p>
+                </div>
+
+                <div class="col-span-4 text-center">
+                    <img class="w-28 mb-8 translate-x-56 max-sm:translate-x-32" src="images/partner-icon-6.svg" alt="">
+                    <h3 class="text-black font-bold text-2xl mb-2">Secure handling</h3>
+                    <p class="text-[#424242] text-base font-normal">Compensation policy guarantees safety of your
+                        shipment</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logistics support section -->
+        <div class="bg-black sm:flex lg:flex md:flex xl:flex justify-around items-center pt-10 mb-36 ">
+            <div>
+                <img src="images/bangladash-map.svg" alt="">
+            </div>
+            <div class=" max-sm:px-4">
+                <h3 class="text-white text-5xl max-sm:text-2xl max-sm:text-center font-bold mb-6">REDX provides
+                    logistics support <br> in all 64 districts
+                    and 493 sub <br> districts across Bangladesh</h3>
+                <h5 class="text-white text-xl max-sm:text-lg  font-normal mb-12">Whatever your logistics need, we
+                    guarantee the fastest
+                    service all over the country</h5>
+                <!-- <button
+                    class="text-white text-base font-normal bg-red-600 px-10 py-4 rounded-md hover:bg-red-500 max-sm:w-full max-sm:mb-5">Check
+                    our coverage area</button> -->
+                    <a href="plan.html" class="text-white text-base font-normal bg-red-600 px-10 py-4 rounded-md hover:bg-red-500 max-sm:w-full max-sm:mb-5">Check our coverage area</a>
+            </div>
+        </div>
+
+        <!-- Delivery calculator section -->
+        <div class="">
+            <div class="text-center max-sm:mx-5">
+                <h3 class="text-[#1A1A1A] text-4xl font-bold mb-5">Delivery calculator</h3>
+                <p class="text-[#424242] text-base font-normal">Plan your shipments with ease as you estimate delivery
+                    costs beforehand</p>
+            </div>
+
+            <div class="sm:flex md:flex lg:flex xl:flex justify-center gap-14 mt-14 max-sm:mx-5 ">
+                <div class="max-sm:mb-8">
+                    <h3 class="mb-2">Weight ( Upto 10kg )</h3>
+                    <input type="text" placeholder="Enter Weight"
+                        class="w-96 max-sm:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 mb-8">
+
+                    <h3 class="mb-2">Pickup Area</h3>
+                    <input type="text" placeholder="Select pickup area"
+                        class="w-96 max-sm:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 ">
+                </div>
+                <div>
+                    <h3 class="mb-2">Selling price of the product</h3>
+                    <input type="text" placeholder="Enter selling price the product"
+                        class="w-96 max-sm:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 mb-8">
+
+                    <h3 class="mb-2">Delivery Area</h3>
+                    <input type="text" placeholder="Select delivery area"
+                        class="w-96 max-sm:w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 ">
+                </div>
+            </div>
+
+            <div class="text-center mt-16 mb-28 max-sm:mx-5">
+                <button
+                    class="text-white text-base font-normal bg-red-600 px-10 py-4 rounded-md hover:bg-red-500 mb-8 max-sm:w-full ">Calculate
+                    price</button>
+
+                <h3 class="text-base font-normal ">Want to know how much it will cost to send a parcel to any location?
+                    <br> Check our <span class="text-base font-normal text-red-600 ">detailed list</span>
+                </h3>
+            </div>
+        </div>
+
+        <!-- Clients Love section -->
+        <div>
+            <div class="flex justify-center items-center gap-3 mb-14">
+                <h3 class="text-[#1A1A1A] text-5xl font-bold ">Clients</h3>
+                <img src="images/heart.png" alt="" class="h-7 w-8">
+                <h3 class="text-[#1A1A1A] text-5xl font-bold">REDX</h3>
+            </div>
+
+            <div class="sm:grid lg:grid md:grid xl:grid grid-cols-12 gap-4 xl:mx-28 max-sm:mx-4">
+                <!-- Carousel Item 1 -->
+                <div class="col-span-4  border-2 rounded-md p-6 max-sm:mb-5">
+                    <div class="flex justify-end">
+                        <h3 class="bg-[#DDDDDD] text-sm font-bold px-2 py-1">SMEs</h3>
+                    </div>
+                    <img src="images/drop-red.svg" class="mt-8" alt="">
+                    <h3 class="  text-[#424242] text-lg font-medium mt-6">We have been working and growing with
+                        REDX since the very beginning. Their parcel tracking and fast payment system has made managing
+                        my business incredibly easy.</h3>
+                    <div class="flex items-center gap-4 mt-10">
+                        <img src="images/client-love1.webp" class="h-16 w-16">
+                        <div>
+                            <h2 class="text-lg font-bold mt-2">Rubaba Akhter</h2>
+                            <p class="text-gray-600">Shelai</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Item 2 -->
+                <div class="col-span-4  border-2 rounded-md p-6">
+                    <div class="flex justify-end">
+                        <h3 class="bg-[#DDDDDD] text-sm font-bold px-2 py-1">Enterprises</h3>
+                    </div>
+                    <img src="images/drop-red.svg" class="mt-8" alt="">
+                    <h3 class=" text-[#424242] text-lg font-medium mt-6">REDX is providing satisfactory last-mile
+                        delivery support which other tech couriers couldn’t provide us. The B2B sales team is very
+                        supportive and tracking system is helpful.</h3>
+                    <div class="flex items-center gap-4 mt-10">
+                        <img src="images/client-love4.png" class="h-16 w-16">
+                        <div>
+                            <h2 class="text-lg font-bold mt-2">Md Faiyaz Mahmud</h2>
+                            <p class="text-gray-600">SENA Lubricant</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Item 3 -->
+                <div class="col-span-4  border-2 rounded-md p-6 max-sm:mt-5 max-sm:mb-5">
+                    <div class="flex justify-end">
+                        <h3 class="bg-[#DDDDDD] text-sm font-bold px-2 py-1">Enterprises</h3>
+                    </div>
+                    <img src="images/drop-red.svg" class="mt-8" alt="">
+                    <h3 class=" text-[#424242] text-lg font-medium mt-6">We are very happy and grateful to you
+                        for your support. In this pandemic session your support is a blessing for us. We hope we will
+                        maintain this relationship and help each other.</h3>
+                    <div class="flex items-center gap-4 mt-10">
+                        <img src="images/client-love5.jpg" class="h-16 w-16">
+                        <div>
+                            <h2 class="text-lg font-bold mt-2">Md Gias Uddin</h2>
+                            <p class="text-gray-600">Kidz Diapers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Item 4 -->
+                <div class="col-span-4  border-2 rounded-md p-6">
+                    <div class="flex justify-end">
+                        <h3 class="bg-[#DDDDDD] text-sm font-bold px-2 py-1">SMEs</h3>
+                    </div>
+                    <img src="images/drop-red.svg" class="mt-8" alt="">
+                    <h3 class="  text-[#424242] text-lg font-medium mt-6">REDX delivery has greatly benefited us
+                        by helping to reduce parcel return rates and fast delivery .Their next day payment clearing
+                        helps balance cash flow.</h3>
+                    <div class="flex items-center gap-4 mt-10">
+                        <img src="images/client-love2.jpg" class="h-16 w-16">
+                        <div>
+                            <h2 class="text-lg font-bold mt-2">Shunno Ayon</h2>
+                            <p class="text-gray-600">Dighal</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Item 5 -->
+                <div class="col-span-4 border-2 rounded-md p-6 max-sm:mt-5 max-sm:mb-5">
+                    <div class="flex justify-end">
+                        <h3 class="bg-[#DDDDDD] text-sm font-bold px-2 py-1">SMEs</h3>
+                    </div>
+                    <img src="images/drop-red.svg" class="mt-8" alt="">
+                    <h3 class="  text-[#424242] text-lg font-medium mt-6">We are very satisfied with the speed of the
+                        delivery inside Dhaka. The tracking system is great and helps us promptly answer queries from
+                        customers.</h3>
+                    <div class="flex items-center gap-4 mt-10">
+                        <img src="images/client-love3.webp" class="h-16 w-16">
+                        <div>
+                            <h2 class="text-lg font-bold mt-2">Lalin Ghosh</h2>
+                            <p class="text-gray-600">Alpha Consumer Foods</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Item 6 -->
+                <div class="col-span-4 border-2 rounded-md p-6">
+                    <div class="flex justify-end">
+                        <h3 class="bg-[#DDDDDD] text-sm font-bold px-2 py-1">Enterprises</h3>
+                    </div>
+                    <img src="images/drop-red.svg" class="mt-8" alt="">
+                    <h3 class="  text-[#424242] text-lg font-medium mt-6">We are very happy and grateful to you
+                        for your support. In this pandemic session your support is a blessing for us. We hope we will
+                        maintain this relationship and help each other.</h3>
+                    <div class="flex items-center gap-4 mt-10">
+                        <img src="images/client-love6.webp" class="h-16 w-16">
+                        <div>
+                            <h2 class="text-lg font-bold mt-2">Abdullah Al Monayem</h2>
+                            <p class="text-gray-600">Earthmoving Solution Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Questions answer section -->
+        <div class="">
+            <div class="text-center mb-12 mt-28">
+                <h3 class="text-[#1A1A1A] text-5xl max-sm:text-4xl font-bold mb-4">Still have questions? We have
+                    answers!</h3>
+                <p class="text-[#424242] text-lg font-normal">Take a look at the most commonly asked questions. We are
+                    here to help.</p>
+            </div>
+
+            <div class="xl:w-1/2 xl:translate-x-1/2 max-sm:mx-4">
+                <div tabindex="0" class="collapse collapse-plus    ">
+                    <div class="collapse-title text-xl font-bold ">What is REDX?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">REDX is a tech-based logistics company nationwide offering end-to-end
+                            services like parcel deliveries for SMEs, documents parcel couriers for individuals and
+                            enterprise logistics solutions for corporate companies</p>
+                    </div>
+                    <hr class="h-0.5 bg-gray-300 my-3">
+                </div>
+
+
+                <div tabindex="0" class="collapse collapse-plus   ">
+                    <div class="collapse-title text-xl font-bold">What kind of services does REDX offer?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">REDX is a complete platform for end-to-end delivery and logistics services
+                            for any business personal needs. The services include parcel delivery, bulk shipment, line
+                            hall, truck rental, loading-unloading, warehouse, logistics services and customized
+                            solutions as required.</p>
+                    </div>
+                    <hr class="h-0.5 bg-gray-300 my-3">
+                </div>
+
+                <div tabindex="0" class="collapse collapse-plus   ">
+                    <div class="collapse-title text-xl font-bold">What is the coverage area of Delivery?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">REDX delivers to all 64 districts of Bangladesh. Click the link to see the
+                            full list of REDX delivery areas. Contact your nearest REDX Hub to book delivery today.
+                            Click here to see the full list of REDX Hubs.</p>
+                    </div>
+                    <hr class="h-0.5 bg-gray-300 my-3">
+                </div>
+
+                <div tabindex="0" class="collapse collapse-plus   ">
+                    <div class="collapse-title text-xl font-bold">Want to know about your delivery and logistics
+                        charges?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-lg mb-5">Our delivery charge is designed according to the weight of the parcel.
+                            Charges start from Tk 69 per kg inside Dhaka, Tk 115 around Dhaka and Tk 150 outside Dhaka.
+                            1% cash on delivery charge is applicable for every delivery near and outside Dhaka.</p>
+                        <p class="text-lg mb-5">See our Home Delivery and Hub Delivery Price Chart for personal parcel
+                            shipping charges. For enterprise logistics, contact our sales team. You can also call at
+                            0910006339 for more information.</p>
+                        <p class="text-lg mb-5">Please note that delivery charges may vary depending on weight and
+                            location. Click on the link to know more about this and learn more about our price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partner sign up section -->
+        <div class="bg-black sm:flex lg:flex md:flex xl:flex justify-around xl:h-44 xl:mx-40 items-center mt-32 mb-28">
+            <div class="p-10">
+                <h3 class="text-white text-3xl font-bold mb-1">Partner up with REDX today</h3>
+                <h5 class="text-white text-lg font-bold">Signing up takes only 2 mins</h5>
+            </div>
+            <div class="p-10">
+                <!-- <button
+                    class="text-white text-base font-normal bg-red-600 px-10 py-4 rounded-md hover:bg-red-500 max-sm:w-full">Sign
+                    up now</button> -->
+                <a href="http://127.0.0.1:5500/sign%20up.html"
+                    class="text-white text-base font-normal bg-red-600 px-10 py-4 rounded-md hover:bg-red-500 max-sm:w-full">Sign
+                    up now</a>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div>
+            <div class="text-center mb-10">
+                <h3 class="text-[#1A1A1A] text-5xl font-bold ">REDX in the news</h3>
+            </div>
+
+            <div class="sm:grid lg:grid md:grid xl:grid grid-cols-12 gap-5 xl:mx-10 max-sm:mx-4 mb-24">
+
+                <div class="col-span-4 border-2 rounded-md p-5  max-sm:mb-5">
+                    <img class="mb-2" src="images/Redx-news3.webp" alt="">
+                    <p>September 7, 2021</p>
+                    <h3 class="text-[#1A1A1A] text-xl font-bold mt-2">Commerce platform ShopUp raises $75 million in
+                        Bangladesh</h3>
+                </div>
+
+                <div class="col-span-4 border-2 rounded-md p-5">
+                    <img class="mb-2" src="images/Redx-news4.png" alt="">
+                    <p>September 7, 2021</p>
+                    <h3 class="text-[#1A1A1A] text-xl font-bold mt-2">Peter Thiel’s VC fund, Sequoia join $75m round of
+                        Bangladesh</h3>
+                </div>
+
+                <div class="col-span-4 border-2 rounded-md p-5 max-sm:mt-5 max-sm:mb-5">
+                    <img class="mb-2" src="images/Redx-news2.png" alt="">
+                    <p>September 7, 2021</p>
+                    <h3 class="text-[#1A1A1A] text-xl font-bold mt-2">ShopUp raises $75m in investment</h3>
+                </div>
+
+                <div class="col-span-4 border-2 rounded-md p-5">
+                    <img class="mb-2" src="images/Redx-news5.png" alt="">
+                    <p>September 7, 2021</p>
+                    <h3 class="text-[#1A1A1A] text-xl font-bold mt-2">৬৪০ কোটি টাকার বিদেশি বিনিয়োগ পেল শপআপ</h3>
+                </div>
+
+                <div class="col-span-4 border-2 rounded-md p-5 max-sm:mt-5 max-sm:mb-5">
+                    <img class="mb-2" src="images/Redx-news1.png" alt="">
+                    <p>12 March, 2021</p>
+                    <h3 class="text-[#1A1A1A] text-xl font-bold mt-2">Daraz and REDX to create a better ecosystem for
+                        customers</h3>
+                </div>
+
+                <div class="col-span-4 border-2 rounded-md p-5">
+                    <img class="mb-2" src="images/Redx-news2.png" alt="">
+                    <p>October 20, 2020</p>
+                    <h3 class="text-[#1A1A1A] text-xl font-bold mt-2">ShopUp raises $22.5 million Series A financing
+                        round
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- footer section -->
+        <div class="bg-[#F5F5F5] sm:flex lg:flex md:flex xl:flex justify-around max-sm:p-10 p-24">
+            <div class=" ">
+                <img class="mb-5" src="images/new-redx-logo.svg" alt="">
+                <p class="text-[#424242] text-lg mb-3 font-normal">Download our app</p>
+                <img src="images/google-play-badge.svg" alt="">
+            </div>
+
+            <div>
+                <h3 class="text-[#1A1A1A] text-lg font-bold mb-5">Important links</h3>
+                <div class="grid">
+                    <a href="courier.html" class="mb-3">Courier</a>
+                    <a href="plan.html" class="mb-3">Coverage Area</a>
+                    <a href="policy.html" class="mb-3">Privacy Policy</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-[#1A1A1A] text-lg font-bold mb-5">Address</h3>
+                <h5 class="mb-3">4th floor, SKS Tower, Dhaka</h5>
+                <h5 class="mb-3">09610007339</h5>
+                <h5 class="mb-3">contact@redx.com.bd</h5>
+            </div>
+
+            <div>
+                <h3 class="text-[#1A1A1A] text-lg font-bold mb-4">Connect Us</h3>
+                <div class="flex gap-5">
+                    <img src="images/fb-icon.svg" class="cursor-pointer">
+                    <img src="images/linkedIn-icon.svg" class="cursor-pointer">
+                    <img src="images/yt-icon.svg" class="cursor-pointer">
+                </div>
+                <h6 class="mt-4">© Redx 2024. All rights reserved</h6>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
